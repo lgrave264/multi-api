@@ -1,13 +1,14 @@
 import React from 'react';
 import Base from './Components/Base';
+import Navbar from './Components/Navbar';
 
 function App(){
     
     return(
         <main>
-            <section className='container'>
-                <Base />
-            </section>
+            <Navbar/>
+            <br/>
+            <Base />
         </main>
     )
 }

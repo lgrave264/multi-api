@@ -1,0 +1,18 @@
+#catlist{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-top: 0;
+    overflow: hidden;
+    background-color: purple;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 3.25rem;
+}
+
+.genre{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}

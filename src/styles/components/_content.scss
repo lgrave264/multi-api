@@ -1,10 +1,16 @@
+@font-face {
+    font-family: 'Anime';
+    src: url('../Util/animeace2_reg.ttf') format('truetype');
+}
+
 #catlist{
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     padding-top: 0;
     overflow: hidden;
-    background-color: purple;
+    background-color: darkred;
+    border:#E34A0B 2px solid;
     position: fixed;
     width: 100%;
     left: 0;
@@ -15,4 +21,8 @@
     position: relative;
     display: inline-block;
     text-align: center;
+    color: white;
+    font-family: Anime;
+    font-size: 10px;
 }
+

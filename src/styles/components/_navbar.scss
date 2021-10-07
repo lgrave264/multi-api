@@ -7,10 +7,17 @@
     padding: 14px 16px;
     text-decoration: none;
     font-weight: bold;
+    color: darkred;
+}
+
+#logo{
+    height: 2rem;
+    width: 8rem;
 }
 
 #title2{
     font-weight: bold;
+    color: darkred;
 }
 .links{
     position: relative;
@@ -34,7 +41,7 @@
         width: 100%;
         transform-origin: left;
         transform: scaleX(0);
-        background-color: blue;
+        background-color: darkred;
         transition: transform 0.5s ease;
     }
     &:hover::after{
@@ -50,7 +57,8 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #FBB60D;
+    border:#E34A0B 2px solid;
     position: fixed;
     top: 0;
     left: 0;

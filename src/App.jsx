@@ -5,7 +5,7 @@ import Navbar from './Components/Navbar';
 function App(){
     
     return(
-        <main>
+        <main id='main'>
             <Navbar/>
             <br/>
             <Base />

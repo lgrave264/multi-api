@@ -3,7 +3,6 @@ import Anime from './Anime';
 
 const Content = () => {
 	const [shows,setShows] =useState([]);
-  // var globalStorage = [category,shows];
   var count = 0;
 	const axios = require('axios').default;
   const [category, setCategory] = useState('action')
@@ -29,11 +28,6 @@ const Content = () => {
         console.log(shows)
       });
     },[category])
-  //   useEffect(()=>{
-  //     console.log(globalStorage)
-  //     setShows(globalStorage);
-  //   //axios.get('https://kitsu.io/api/edge/anime/1/categories')
-  // },[])
 	
 	return (
 		<div>
@@ -49,8 +43,7 @@ const Content = () => {
         <li><button className='genre' onClick={()=>{setCategory('planet')}}>Other Planet</button></li>
       </ul>
       <div>
-
-        {setTimeout(<Anime shows={shows}/>,3000)}
+        <Anime shows={shows}/>
       </div>
 		</div>
 	)

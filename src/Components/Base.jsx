@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Load from './Loadinggif';
 import Error from './Erorr';
 import Content from './Content';
+import Merch from './Merch';
 const check = 'https://api.github.com/users/QuincyLarson';
 
 const Base = () => {
@@ -33,7 +34,7 @@ const Base = () => {
     }
 
   return <div>
-    <Content/>
+    <Merch/>
   </div>;
 };
 

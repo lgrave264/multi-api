@@ -2,7 +2,8 @@ import React, {useEffect, useState} from 'react'
 import Small from './Small'
 import { AiFillGithub } from 'react-icons/ai';
 import { AiOutlineMenu } from 'react-icons/ai';
-import logo from '../Util/logo.png'
+import logo from '../Util/logo.png';
+import {temp} from './Temp';
 
 const Navbar = () => {
     const [size, setSize] = useState(window.innerWidth);
@@ -34,7 +35,7 @@ const [toggle, setToggle] = useState(false);
                 <ul  className='navbar'>
                     <li id='title'><img id='logo' alt='AniMerch' src={logo}/></li>
                     <li className='links'><a href="#">Anime</a></li>
-                    <li className='links'><a href="#">Merch</a></li>
+                    <li className='links'><a href="#" onClick={()=>{setMerch(!merch)}}>Merch</a></li>
                     <li className='links'><a href="https://github.com/lgrave264">My Hub</a></li>
                     <li id='icons'><a href="https://github.com/lgrave264/multi-api"><AiFillGithub/></a></li>
                 </ul>

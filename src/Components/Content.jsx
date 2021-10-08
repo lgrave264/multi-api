@@ -1,13 +1,13 @@
 import {React, useEffect, useState} from 'react'
 import Anime from './Anime';
 import Merch from './Merch';
+import {Temp} from './Temp';
 
 const Content = () => {
 	const [shows,setShows] =useState([]);
   var count = 0;
 	const axios = require('axios').default;
   const [category, setCategory] = useState('action');
-  const [merch,setMerch] = useState(false);
   console.log(category)
     useEffect(()=>{
       axios.get(`https://kitsu.io/api/edge/anime?filter[categories]=${category}`)

@@ -1,16 +1,33 @@
 import {React, useEffect, useState} from 'react'
 import Anime from './Anime';
-import Merch from './Merch';
-import {Temp} from './Temp';
+import Facts from './Facts';
 
 const Content = () => {
 	const [shows,setShows] =useState([]);
+  const [factsPage,setFactsPage]= useState([]);
+  const [merch,setMerch] = useState(false);
   var count = 0;
 	const axios = require('axios').default;
   const [category, setCategory] = useState('action');
+   function getFacts(){
+    axios.get('https://anime-facts-rest-api.herokuapp.com/api/v1')
+    .then(function (response2) {
+      // handle success
+      setFactsPage(response2)
+      console.log(response2);
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+    })
+    .then(function () {
+      // alwayses executed
+      }
+    );
+  }
   console.log(category)
-    useEffect(()=>{
-      axios.get(`https://kitsu.io/api/edge/anime?filter[categories]=${category}`)
+  function getAnime(){
+    axios.get(`https://kitsu.io/api/edge/anime?filter[categories]=${category}`)
       .then(function (response) {
         // handle success
         console.log(shows)
@@ -29,6 +46,10 @@ const Content = () => {
         }
         console.log(shows)
       });
+  }
+    useEffect(()=>{
+     getAnime();
+     getFacts();
     },[category])
 	if(merch == true){
     return (
@@ -44,8 +65,9 @@ const Content = () => {
           <li><button className='genre' onClick={()=>{setCategory('apocalypse')}}>Post Apocalypse</button></li>
           <li><button className='genre' onClick={()=>{setCategory('planet')}}>Other Planet</button></li>
         </ul>
-        <div>
-          <Merch/>
+        <div id='pagebox'>
+          <button className='pagebutton' onClick={()=>{setMerch(!merch)}}>Top 10 shows</button>
+          <Facts facts={factsPage}/>
         </div>
       </div>
     )
@@ -63,9 +85,9 @@ const Content = () => {
           <li><button className='genre' onClick={()=>{setCategory('apocalypse')}}>Post Apocalypse</button></li>
           <li><button className='genre' onClick={()=>{setCategory('planet')}}>Other Planet</button></li>
         </ul>
-        <div>
+        <div id='pagebox'>
+          <button className='pagebutton' onClick={()=>{setMerch(!merch)}}>Random Anime Facts</button>
           <Anime shows={shows}/>
-          <button onClick={()=>{setMerch(!merch)}}>ghytgfvbgfvbhygtfvbgtfc</button>
         </div>
       </div>
     )

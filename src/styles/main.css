@@ -435,6 +435,10 @@ h4 {
   font-family: "Anime";
   src: url("../Util/animeace2_reg.ttf") format("truetype");
 }
+.pagebutton {
+  margin-top: 5rem;
+}
+
 #catlist {
   display: flex;
   justify-content: space-around;
@@ -449,6 +453,16 @@ h4 {
   top: 3.25rem;
 }
 
+.pagebutton {
+  background-color: darkred;
+  border: 1px black solid;
+  border-radius: 1rem;
+  width: 11rem;
+  text-align: center;
+  align-items: center;
+  margin-left: 42%;
+}
+
 .genre {
   position: relative;
   display: inline-block;
@@ -459,19 +473,76 @@ h4 {
 }
 
 .animeBox {
-  border: darkorange 2px solid;
-  display: flex;
+  border: black 0.2rem solid;
+  display: flexbox;
   margin-left: 1rem;
   margin-bottom: 1rem;
   width: 30rem;
-  height: 15rem;
+  height: 20rem;
+  background-color: darkred;
   float: left;
+  overflow: auto;
+  word-wrap: break-word;
+  font-family: Anime;
+  color: white;
+}
+
+#desc {
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
+
+#expand {
+  background-color: orange;
+  border: 1px black solid;
+  border-radius: 2rem;
+  width: 5rem;
+}
+
+#name {
+  font-family: Anime;
+  margin-bottom: 0px;
+  float: left;
+  color: white;
+}
+
+.info {
+  float: right;
+  width: 17rem;
+  overflow: auto;
+  color: white;
+}
+
+.image {
+  height: 15rem;
+}
+
+.age {
+  margin: none;
+  color: white;
+}
+
+.status {
+  margin: none;
+  color: white;
+}
+
+.epicount {
+  margin: none;
+  color: white;
+}
+
+.epilength {
+  margin: none;
+  color: white;
 }
 
 .firstBox {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 6rem;
+  margin-top: 1rem;
 }
 
 .container {

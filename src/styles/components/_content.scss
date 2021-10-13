@@ -3,6 +3,10 @@
     src: url('../Util/animeace2_reg.ttf') format('truetype');
 }
 
+.pagebutton{
+    margin-top: 5rem;
+}
+
 #catlist{
     display: flex;
     justify-content: space-around;
@@ -15,6 +19,18 @@
     width: 100%;
     left: 0;
     top: 3.25rem;
+}
+
+
+
+.pagebutton{
+    background-color: darkred;
+    border: 1px black solid;
+    border-radius: 1rem;
+    width: 11rem;
+    text-align: center;
+    align-items: center;
+    margin-left: 42%;
 }
 
 .genre{

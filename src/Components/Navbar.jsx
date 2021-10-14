@@ -33,7 +33,7 @@ const [toggle, setToggle] = useState(false);
             <header>
                 <ul  className='navbar'>
                     <li id='title'><img id='logo' alt='AniMerch' src={logo}/></li>
-                    <li className='links'><a href="#">Anime</a></li>
+                    <li className='links'><a onClick={() => {window.location.reload()}} href="#">Anime</a></li>
                     <li className='links'><a href="https://github.com/lgrave264">My Hub</a></li>
                     <li id='icons'><a href="https://github.com/lgrave264/multi-api"><AiFillGithub/></a></li>
                 </ul>

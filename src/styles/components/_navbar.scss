@@ -78,6 +78,15 @@
     text-decoration: none;
 }
 
+.navbar li button {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    padding-bottom: 0%;
+    text-decoration: none;
+}
+
 #menu{
     transition: transform .7s ease-in-out;
 }

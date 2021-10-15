@@ -1,3 +1,4 @@
+/* eslint-disable */
 import {React, useEffect, useState} from 'react'
 import Anime from './Anime';
 import Facts from './Facts';
@@ -49,10 +50,10 @@ const Content = () => {
       });
   }
     useEffect(()=>{
-     getAnime();
-     getFacts();
+      getAnime();
+      getFacts();
     },[category,name])
-	if(merch == true){
+	if(merch === true){
     return (
       <div>
         <ul id='catlist'>

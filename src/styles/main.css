@@ -357,6 +357,15 @@ h4 {
   text-decoration: none;
 }
 
+.navbar li button {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  padding-bottom: 0%;
+  text-decoration: none;
+}
+
 #menu {
   transition: transform 0.7s ease-in-out;
 }
@@ -394,6 +403,16 @@ h4 {
 }
 
 .small .links2 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  padding-bottom: 0%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.small .links2 button {
   display: block;
   color: white;
   text-align: center;

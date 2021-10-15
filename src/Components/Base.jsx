@@ -6,7 +6,7 @@ const check = 'https://api.github.com/users/QuincyLarson';
 
 const Base = () => {
     const [isLoading, setIsLoading]= useState(true)
-    const [isError, setIsError]= useState(false)
+    const [isError]= useState(false)
 
     useEffect(()=>{
         fetch(check)

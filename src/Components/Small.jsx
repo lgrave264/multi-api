@@ -7,7 +7,7 @@ const Small = ({toggle}) => {
                 <div className='small'>
                     <div className='divlinks2'>
                         <ul className='links2'>
-                            <li><a onClick={() => {window.location.reload()}} href='#'>Anime</a></li>
+                            <li><button onClick={() => {window.location.reload()}}>Anime</button></li>
                             <li><a href='https://github.com/lgrave264'>My Hub</a></li>
                         </ul>
                     </div>

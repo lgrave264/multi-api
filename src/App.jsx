@@ -3,7 +3,6 @@ import Base from './Components/Base';
 import Navbar from './Components/Navbar';
 
 function App(){
-    
     return(
         <main id='main'>
             <Navbar/>
